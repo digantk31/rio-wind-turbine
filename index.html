@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio Wind Turbine Pvt Ltd | Small Wind Energy Systems for Homes & Businesses</title>
+    <meta name="description"
+        content="Rio Wind Turbine provides affordable small wind energy systems for homes, farms, schools and businesses. Hybrid-ready wind power solutions with smart controllers.">
+    <meta name="keywords"
+        content="small wind turbine india, home wind power, hybrid solar wind, rooftop wind turbine, wind energy systems">
+    <meta name="author" content="Rio Wind Turbine Pvt Ltd">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Rio Wind Turbine Pvt Ltd | Smart Wind Energy for Modern Living">
+    <meta property="og:description"
+        content="Affordable wind power systems for homes and businesses. Hybrid-ready solutions with global components.">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://riowindturbine.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rio Wind Turbine Pvt Ltd">
+    <meta name="twitter:description" content="Smart Wind Energy for Modern Living">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- GSAP + ScrollTrigger for scroll-driven animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Rio Wind Turbine Pvt Ltd",
+        "description": "Renewable Energy Solutions Provider specializing in small wind energy systems",
+        "url": "https://riowindturbine.com",
+        "logo": "logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Sales",
+            "availableLanguage": ["English", "Hindi"]
+        },
+        "sameAs": []
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="logo.png" alt="Rio Wind Turbine Logo" class="logo-img">
+                <span class="logo-text">
+                    <span class="logo-rio">Rio</span>
+                    <span class="logo-wind">Wind</span>
+                    <span class="logo-turbine">Turbine</span>
+                </span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#why-rio">Why Rio</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact" class="nav-cta">Get Quote</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Scroll-Driven Frame Sequence -->
+    <section class="hero-wrapper" id="heroWrapper">
+        <section class="hero" id="hero">
+            <!-- Sky Blue Gradient Background -->
+            <div class="hero-bg-gradient"></div>
+
+            <!-- Mobile Fallback Video -->
+            <video class="hero-video" id="heroVideo" autoplay muted loop playsinline>
+                <source src="animation.mp4" type="video/mp4">
+            </video>
+
+            <!-- Loading Indicator -->
+            <div class="hero-loader" id="heroLoader">
+                <div class="loader-content">
+                    <div class="loader-spinner"></div>
+                    <p class="loader-text">Loading <span id="loadProgress">0</span>%</p>
+                </div>
+            </div>
+
+            <!-- Canvas for Frame Sequence -->
+            <canvas class="hero-canvas" id="heroCanvas"></canvas>
+
+            <!-- Wind Particles Overlay -->
+            <div class="wind-particles" id="windParticles"></div>
+
+            <!-- Mobile Turbine Animation (Background) -->
+            <div class="hero-turbine-bg">
+                <svg class="hero-turbine-icon" viewBox="0 0 100 100" fill="currentColor">
+                    <!-- Tapered Tower -->
+                    <path d="M48.5 100 L49.3 35 L50.7 35 L51.5 100 Z" opacity="0.4" />
+                    <!-- Rotating Realistic Blades -->
+                    <g class="turbine-blades">
+                        <circle cx="50" cy="35" r="2.5" />
+                        <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" />
+                        <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" transform="rotate(120 50 35)" />
+                        <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" transform="rotate(240 50 35)" />
+                    </g>
+                </svg>
+            </div>
+
+            <!-- Hero Content -->
+            <div class="hero-content" id="heroContent">
+                <h1 class="hero-title">Smart <span class="text-accent">Wind Energy</span> for Modern Living</h1>
+                <p class="hero-subtitle">Affordable wind power systems for homes and businesses.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Explore Systems</a>
+                    <a href="https://wa.me/919137328333?text=Hello%20Rio%20Wind%20Turbine%20Team%2C%0AI%20am%20interested%20in%20your%20wind%20energy%20systems.%20Please%20contact%20me."
+                        class="btn btn-secondary" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        WhatsApp Inquiry
+                    </a>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator" id="scrollIndicator">
+                <span>Scroll to explore</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+    </section>
+
+
+    <!-- Trust Strip -->
+    <section class="trust-strip">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <div class="trust-icon">🌍</div>
+                    <span>Global Components</span>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🇮🇳</div>
+                    <span>Optimized for India</span>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🎛️</div>
+                    <span>Smart Controllers</span>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">⚡</div>
+                    <span>Hybrid Ready</span>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">💬</div>
+                    <span>WhatsApp Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <!-- Background Turbine -->
+        <div class="bg-turbine">
+            <svg viewBox="0 0 100 100" fill="currentColor">
+                <!-- Realistic Tapered Tower -->
+                <path d="M48.5 100 L49.3 35 L50.7 35 L51.5 100 Z" opacity="0.4" />
+                <!-- Rotating Realistic Blades -->
+                <g class="turbine-blades">
+                    <circle cx="50" cy="35" r="2.5" />
+                    <!-- Aerodynamic Blade 1 -->
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" />
+                    <!-- Aerodynamic Blade 2 -->
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" transform="rotate(120 50 35)" />
+                    <!-- Aerodynamic Blade 3 -->
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" transform="rotate(240 50 35)" />
+                </g>
+            </svg>
+        </div>
+        <div class="container animate-on-scroll">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">About Us</span>
+                <h2>Powering a Sustainable Future</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text animate-on-scroll">
+                    <p class="lead">Rio Wind Turbine Pvt Ltd is a clean energy startup delivering reliable small-scale
+                        wind power systems for modern India.</p>
+                    <p>We are a <strong>Renewable Energy Solutions Provider & System Integrator</strong>, specializing
+                        in carefully selected global components optimized for Indian conditions.</p>
+                    <div class="about-specializations">
+                        <h3>We Specialize In:</h3>
+                        <ul>
+                            <li>System Selection & Consultation</li>
+                            <li>Deployment Planning</li>
+                            <li>Hybrid Integration (Solar + Wind)</li>
+                            <li>Technical Guidance</li>
+                            <li>Customer Support</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-mission animate-on-scroll">
+                    <div class="mission-card">
+                        <h3>Our Mission</h3>
+                        <p>To simplify wind energy adoption for homes, businesses, and communities across India.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <!-- Background Turbine -->
+        <div class="bg-turbine">
+            <svg viewBox="0 0 100 100" fill="currentColor">
+                <!-- Realistic Tapered Tower -->
+                <path d="M48.5 100 L49.3 35 L50.7 35 L51.5 100 Z" opacity="0.4" />
+                <!-- Rotating Realistic Blades -->
+                <g class="turbine-blades">
+                    <circle cx="50" cy="35" r="2.5" />
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" />
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" transform="rotate(120 50 35)" />
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" transform="rotate(240 50 35)" />
+                </g>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Our Systems</span>
+                <h2>Wind Energy Solutions</h2>
+                <p>Choose the right system for your energy needs</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Rio Breeze -->
+                <div class="product-card animate-on-scroll" data-product="breeze">
+                    <div class="product-badge">Entry Level</div>
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg viewBox="0 0 100 100" fill="currentColor">
+                                <path d="M49 90 L49.5 50 L50.5 50 L51 90 Z" opacity="0.3" stroke="currentColor"
+                                    stroke-width="0.5" />
+                                <g class="turbine-blades" style="transform-origin: 50% 50%; opacity: 0.8;">
+                                    <circle cx="50" cy="50" r="3" />
+                                    <path d="M50 50 C48 48 47 30 50 15 C52 30 53 45 50 50 Z" />
+                                    <path d="M50 50 C48 48 47 30 50 15 C52 30 53 45 50 50 Z"
+                                        transform="rotate(120 50 50)" />
+                                    <path d="M50 50 C48 48 47 30 50 15 C52 30 53 45 50 50 Z"
+                                        transform="rotate(240 50 50)" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Rio Breeze</h3>
+                    <div class="product-capacity">0.3kW System</div>
+                    <p>Perfect for small homes and apartments with low energy needs.</p>
+                    <ul class="product-features">
+                        <li>Up to 300W output</li>
+                        <li>Low noise operation</li>
+                        <li>AC/DC support</li>
+                        <li>Compact design</li>
+                    </ul>
+                    <div class="product-includes">
+                        <strong>Includes:</strong> Turbine, Controller, Mount, Optional Battery
+                    </div>
+                    <div class="product-buttons">
+                        <button class="btn btn-outline" onclick="openProductModal('breeze')">View Details</button>
+                        <a href="https://wa.me/919137328333?text=Hello%2C%20I%20am%20interested%20in%20Rio%20Breeze%200.3kW%20System.%20Please%20share%20more%20details."
+                            class="btn btn-primary" target="_blank">WhatsApp Inquiry</a>
+                    </div>
+                    <p class="product-note">*Typical specifications – may vary by site conditions</p>
+                </div>
+
+                <!-- Rio Storm -->
+                <div class="product-card featured animate-on-scroll" data-product="storm">
+                    <div class="product-badge">Popular</div>
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg viewBox="0 0 100 100" fill="currentColor">
+                                <path d="M48.5 90 L49.3 50 L50.7 50 L51.5 90 Z" opacity="0.4" stroke="currentColor"
+                                    stroke-width="0.5" />
+                                <g class="turbine-blades" style="transform-origin: 50% 50%;">
+                                    <circle cx="50" cy="50" r="4" />
+                                    <path d="M50 50 C48 48 46 25 50 10 C54 25 52 45 50 50 Z" />
+                                    <path d="M50 50 C48 48 46 25 50 10 C54 25 52 45 50 50 Z"
+                                        transform="rotate(120 50 50)" />
+                                    <path d="M50 50 C48 48 46 25 50 10 C54 25 52 45 50 50 Z"
+                                        transform="rotate(240 50 50)" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Rio Storm</h3>
+                    <div class="product-capacity">1kW System</div>
+                    <p>Ideal for homes, farms, and small businesses seeking reliable power.</p>
+                    <ul class="product-features">
+                        <li>Up to 1000W output</li>
+                        <li>Efficient in low winds</li>
+                        <li>Smart MPPT controller</li>
+                        <li>Hybrid compatible</li>
+                    </ul>
+                    <div class="product-includes">
+                        <strong>Includes:</strong> Turbine, MPPT Controller, Tower Mount, Wiring Kit
+                    </div>
+                    <div class="product-buttons">
+                        <button class="btn btn-outline" onclick="openProductModal('storm')">View Details</button>
+                        <a href="https://wa.me/919137328333?text=Hello%2C%20I%20am%20interested%20in%20Rio%20Storm%201kW%20System.%20Please%20share%20more%20details."
+                            class="btn btn-primary" target="_blank">WhatsApp Inquiry</a>
+                    </div>
+                    <p class="product-note">*Typical specifications – may vary by site conditions</p>
+                </div>
+
+                <!-- Rio Titan -->
+                <div class="product-card animate-on-scroll" data-product="titan">
+                    <div class="product-badge">High Power</div>
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <svg viewBox="0 0 100 100" fill="currentColor">
+                                <path d="M48 90 L49 50 L51 50 L52 90 Z" opacity="0.5" stroke="currentColor"
+                                    stroke-width="0.5" />
+                                <g class="turbine-blades" style="transform-origin: 50% 50%;">
+                                    <circle cx="50" cy="50" r="5" />
+                                    <path d="M50 50 C48 48 45 20 50 5 C55 20 52 45 50 50 Z" />
+                                    <path d="M50 50 C48 48 45 20 50 5 C55 20 52 45 50 50 Z"
+                                        transform="rotate(120 50 50)" />
+                                    <path d="M50 50 C48 48 45 20 50 5 C55 20 52 45 50 50 Z"
+                                        transform="rotate(240 50 50)" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Rio Titan</h3>
+                    <div class="product-capacity">3kW System</div>
+                    <p>Powerful solution for schools, farms, and commercial applications.</p>
+                    <ul class="product-features">
+                        <li>Up to 3000W output</li>
+                        <li>Industrial grade</li>
+                        <li>Advanced monitoring</li>
+                        <li>Grid-tie ready</li>
+                    </ul>
+                    <div class="product-includes">
+                        <strong>Includes:</strong> Turbine, Inverter, Controller, Tower, Full Installation Support
+                    </div>
+                    <div class="product-buttons">
+                        <button class="btn btn-outline" onclick="openProductModal('titan')">View Details</button>
+                        <a href="https://wa.me/919137328333?text=Hello%2C%20I%20am%20interested%20in%20Rio%20Titan%203kW%20System.%20Please%20share%20more%20details."
+                            class="btn btn-primary" target="_blank">WhatsApp Inquiry</a>
+                    </div>
+                    <p class="product-note">*Typical specifications – may vary by site conditions</p>
+                </div>
+            </div>
+
+            <!-- Comparison Table -->
+            <div class="comparison-section animate-on-scroll">
+                <h3>Compare Our Systems</h3>
+                <div class="table-responsive">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Rio Breeze</th>
+                                <th>Rio Storm</th>
+                                <th>Rio Titan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Rated Power</td>
+                                <td>300W</td>
+                                <td>1000W</td>
+                                <td>3000W</td>
+                            </tr>
+                            <tr>
+                                <td>Start Wind Speed</td>
+                                <td>2.5 m/s</td>
+                                <td>2.0 m/s</td>
+                                <td>2.5 m/s</td>
+                            </tr>
+                            <tr>
+                                <td>Rated Wind Speed</td>
+                                <td>11 m/s</td>
+                                <td>10 m/s</td>
+                                <td>11 m/s</td>
+                            </tr>
+                            <tr>
+                                <td>Rotor Diameter</td>
+                                <td>1.2m</td>
+                                <td>2.0m</td>
+                                <td>3.2m</td>
+                            </tr>
+                            <tr>
+                                <td>Controller</td>
+                                <td>Basic PWM</td>
+                                <td>Smart MPPT</td>
+                                <td>Advanced MPPT</td>
+                            </tr>
+                            <tr>
+                                <td>Hybrid Ready</td>
+                                <td>Optional</td>
+                                <td>✓</td>
+                                <td>✓</td>
+                            </tr>
+                            <tr>
+                                <td>Best For</td>
+                                <td>Apartments, Small Homes</td>
+                                <td>Homes, Small Farms</td>
+                                <td>Schools, Farms, Commercial</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <!-- Background Turbine -->
+        <div class="bg-turbine">
+            <svg viewBox="0 0 100 100" fill="currentColor">
+                <!-- Realistic Tapered Tower -->
+                <path d="M48.5 100 L49.3 35 L50.7 35 L51.5 100 Z" opacity="0.4" />
+                <!-- Rotating Realistic Blades -->
+                <g class="turbine-blades">
+                    <circle cx="50" cy="35" r="2.5" />
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" />
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" transform="rotate(120 50 35)" />
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" transform="rotate(240 50 35)" />
+                </g>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Simple Process</span>
+                <h2>How It Works</h2>
+            </div>
+            <div class="steps-container">
+                <div class="step animate-on-scroll">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 64 64" fill="currentColor">
+                            <path d="M31.5 60 L31.8 32 L32.2 32 L32.5 60 Z" opacity="0.5" stroke="currentColor"
+                                stroke-width="0.5" />
+                            <g class="turbine-blades" style="transform-origin: 32px 32px; animation-duration: 10s;">
+                                <circle cx="32" cy="32" r="2" />
+                                <path d="M32 32 C31 30 30 20 32 10 C34 20 33 30 32 32 Z" />
+                                <path d="M32 32 C31 30 30 20 32 10 C34 20 33 30 32 32 Z"
+                                    transform="rotate(120 32 32)" />
+                                <path d="M32 32 C31 30 30 20 32 10 C34 20 33 30 32 32 Z"
+                                    transform="rotate(240 32 32)" />
+                            </g>
+                        </svg>
+                    </div>
+                    <h3>Wind Rotates Turbine</h3>
+                    <p>Natural wind energy spins the turbine blades, converting kinetic energy into rotational motion.
+                    </p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step animate-on-scroll">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 64 64">
+                            <rect x="16" y="20" width="32" height="24" rx="2" fill="none" stroke="currentColor"
+                                stroke-width="2" />
+                            <path d="M24,28 L40,28 M24,36 L36,36" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3>Controller Regulates Power</h3>
+                    <p>Smart controllers optimize voltage and current for safe, efficient power delivery to your home or
+                        battery.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step animate-on-scroll">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <svg viewBox="0 0 64 64">
+                            <rect x="20" y="16" width="24" height="32" rx="2" fill="none" stroke="currentColor"
+                                stroke-width="2" />
+                            <path d="M28,24 L36,24 M28,32 L36,32 M28,40 L36,40" stroke="currentColor"
+                                stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3>Energy Used or Stored</h3>
+                    <p>Clean electricity powers your appliances directly or charges batteries for later use.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications -->
+    <section class="applications" id="applications">
+        <!-- Background Turbine -->
+        <div class="bg-turbine">
+            <svg viewBox="0 0 100 100" fill="currentColor">
+                <!-- Realistic Tapered Tower -->
+                <path d="M48.5 100 L49.3 35 L50.7 35 L51.5 100 Z" opacity="0.4" />
+                <!-- Rotating Realistic Blades -->
+                <g class="turbine-blades">
+                    <circle cx="50" cy="35" r="2.5" />
+                    <!-- Aerodynamic Blade 1 -->
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" />
+                    <!-- Aerodynamic Blade 2 -->
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" transform="rotate(120 50 35)" />
+                    <!-- Aerodynamic Blade 3 -->
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" transform="rotate(240 50 35)" />
+                </g>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Use Cases</span>
+                <h2>Applications</h2>
+                <p>Wind energy solutions for every need</p>
+            </div>
+            <div class="applications-grid">
+                <div class="application-card animate-on-scroll">
+                    <div class="application-icon">🏠</div>
+                    <h3>Homes</h3>
+                    <p>Reduce electricity bills with clean, renewable wind power for your residence.</p>
+                </div>
+                <div class="application-card animate-on-scroll">
+                    <div class="application-icon">🏢</div>
+                    <h3>Apartments</h3>
+                    <p>Compact systems designed for urban rooftop installations.</p>
+                </div>
+                <div class="application-card animate-on-scroll">
+                    <div class="application-icon">🌾</div>
+                    <h3>Farms</h3>
+                    <p>Power irrigation pumps, lighting, and equipment with wind energy.</p>
+                </div>
+                <div class="application-card animate-on-scroll">
+                    <div class="application-icon">🏫</div>
+                    <h3>Schools</h3>
+                    <p>Educational institutions embracing sustainable energy practices.</p>
+                </div>
+                <div class="application-card animate-on-scroll">
+                    <div class="application-icon">🏔️</div>
+                    <h3>Remote Areas</h3>
+                    <p>Off-grid power solutions for locations without reliable electricity.</p>
+                </div>
+                <div class="application-card animate-on-scroll">
+                    <div class="application-icon">☀️</div>
+                    <h3>Hybrid Solar</h3>
+                    <p>Combine with solar panels for 24/7 renewable energy generation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Rio -->
+    <section class="why-rio" id="why-rio">
+        <!-- Background Turbine -->
+        <div class="bg-turbine">
+            <svg viewBox="0 0 100 100" fill="currentColor">
+                <!-- Realistic Tapered Tower -->
+                <path d="M48.5 100 L49.3 35 L50.7 35 L51.5 100 Z" opacity="0.4" />
+                <!-- Rotating Realistic Blades -->
+                <g class="turbine-blades">
+                    <circle cx="50" cy="35" r="2.5" />
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" />
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" transform="rotate(120 50 35)" />
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" transform="rotate(240 50 35)" />
+                </g>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Our Advantage</span>
+                <h2>Why Choose Rio</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Global Components</h3>
+                    <p>Carefully selected components from leading global technology partners.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">🎛️</div>
+                    <h3>Smart Controllers</h3>
+                    <p>Advanced MPPT controllers for maximum energy harvest.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">🔇</div>
+                    <h3>Quiet Operation</h3>
+                    <p>Designed for residential areas with minimal noise output.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Easy Installation</h3>
+                    <p>Simplified deployment with comprehensive technical guidance.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Hybrid Ready</h3>
+                    <p>Seamlessly integrate with existing solar installations.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">💰</div>
+                    <h3>Cost Effective</h3>
+                    <p>Affordable systems with excellent return on investment.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">💬</div>
+                    <h3>WhatsApp Support</h3>
+                    <p>Quick responses and ongoing support via WhatsApp.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <!-- Background Turbine -->
+        <div class="bg-turbine">
+            <svg viewBox="0 0 100 100" fill="currentColor">
+                <!-- Realistic Tapered Tower -->
+                <path d="M48.5 100 L49.3 35 L50.7 35 L51.5 100 Z" opacity="0.4" />
+                <!-- Rotating Realistic Blades -->
+                <g class="turbine-blades">
+                    <circle cx="50" cy="35" r="2.5" />
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" />
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" transform="rotate(120 50 35)" />
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" transform="rotate(240 50 35)" />
+                </g>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Customer Stories</span>
+                <h2>What Our Customers Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p>"The Rio Storm system has reduced our farm's electricity costs by 40%. The team was incredibly
+                        helpful with installation guidance."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div class="author-info">
+                            <strong>Rajesh Kumar</strong>
+                            <span>Farm Owner, Punjab</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p>"We installed Rio Breeze on our apartment rooftop. It's quiet, efficient, and our neighbors are
+                        now interested too!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PS</div>
+                        <div class="author-info">
+                            <strong>Priya Sharma</strong>
+                            <span>Homeowner, Bangalore</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p>"Rio Titan powers our entire school campus. The hybrid setup with solar ensures we never run out
+                        of clean energy."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AM</div>
+                        <div class="author-info">
+                            <strong>Arun Mehta</strong>
+                            <span>School Principal, Gujarat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <!-- Background Turbine -->
+        <div class="bg-turbine">
+            <svg viewBox="0 0 100 100" fill="currentColor">
+                <!-- Realistic Tapered Tower -->
+                <path d="M48.5 100 L49.3 35 L50.7 35 L51.5 100 Z" opacity="0.4" />
+                <!-- Rotating Realistic Blades -->
+                <g class="turbine-blades">
+                    <circle cx="50" cy="35" r="2.5" />
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" />
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" transform="rotate(120 50 35)" />
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" transform="rotate(240 50 35)" />
+                </g>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Questions</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        What wind speed is required for the turbines to work?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our turbines start generating power at wind speeds as low as 2.0-2.5 m/s. They reach rated
+                            power at 10-11 m/s. Most areas in India have sufficient wind for our systems to be
+                            effective.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        Can I combine wind with my existing solar system?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Our Rio Storm and Rio Titan systems are hybrid-ready and can be integrated with existing
+                            solar installations. This provides 24/7 renewable energy generation - solar during the day
+                            and wind at night.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        How much space do I need for installation?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Space requirements vary by system. Rio Breeze needs minimal rooftop space (2m x 2m). Rio
+                            Storm requires about 3m x 3m, and Rio Titan needs approximately 5m x 5m with proper tower
+                            clearance.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        What maintenance is required?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our systems require minimal maintenance. We recommend a visual inspection every 6 months and
+                            professional servicing annually. The turbines are designed for long-term, low-maintenance
+                            operation.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        Are the turbines noisy?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No, our turbines are designed for quiet residential operation. The Rio Breeze produces less
+                            than 35dB at rated speed - quieter than a typical conversation. Even the larger Rio Titan is
+                            engineered for minimal noise.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        Do you provide installation services?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We provide comprehensive deployment services including site assessment, system selection,
+                            installation guidance, and technical support. Our team ensures your system is optimally
+                            configured for your location.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        What warranty do you offer?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer comprehensive warranty coverage on all our systems. Specific warranty terms vary by
+                            product and are provided during the consultation process. Contact us for detailed warranty
+                            information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner animate-on-scroll">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Harness Wind Power?</h2>
+                <p>Get a free consultation and find the perfect system for your needs.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary btn-large">Get Free Quote</a>
+                    <a href="https://wa.me/919137328333?text=Hello%20Rio%20Wind%20Turbine%20Team%2C%0AI%20am%20interested%20in%20your%20wind%20energy%20systems.%20Please%20contact%20me."
+                        class="btn btn-secondary btn-large" target="_blank">Chat on WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <!-- Background Turbine -->
+        <div class="bg-turbine">
+            <svg viewBox="0 0 100 100" fill="currentColor">
+                <!-- Realistic Tapered Tower -->
+                <path d="M48.5 100 L49.3 35 L50.7 35 L51.5 100 Z" opacity="0.4" />
+                <!-- Rotating Realistic Blades -->
+                <g class="turbine-blades">
+                    <circle cx="50" cy="35" r="2.5" />
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" />
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" transform="rotate(120 50 35)" />
+                    <path d="M50 35 C48.5 32 47.5 20 50 5 C51.5 15 52 30 50 35 Z" transform="rotate(240 50 35)" />
+                </g>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Get In Touch</span>
+                <h2>Contact Us</h2>
+                <p>Send us your inquiry and we'll get back to you within 24 hours</p>
+            </div>
+            <div class="contact-wrapper">
+                <form class="contact-form animate-on-scroll" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="Your phone number">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City *</label>
+                            <input type="text" id="city" name="city" required placeholder="Your city">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="product">Interested In</label>
+                        <select id="product" name="product">
+                            <option value="">Select a product</option>
+                            <option value="Rio Breeze 0.3kW">Rio Breeze – 0.3kW System</option>
+                            <option value="Rio Storm 1kW">Rio Storm – 1kW System</option>
+                            <option value="Rio Titan 3kW">Rio Titan – 3kW System</option>
+                            <option value="Not Sure">Not Sure – Need Consultation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Tell us about your requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large btn-full">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        Send via WhatsApp
+                    </button>
+                </form>
+                <div class="contact-info animate-on-scroll">
+                    <div class="info-card">
+                        <h3>Quick Contact</h3>
+                        <p>Reach out to us directly via WhatsApp for fastest response.</p>
+                        <a href="https://wa.me/919137328333?text=Hello%20Rio%20Wind%20Turbine%20Team%2C%0AI%20am%20interested%20in%20your%20wind%20energy%20systems.%20Please%20contact%20me."
+                            class="btn btn-whatsapp" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                            Chat on WhatsApp
+                        </a>
+                    </div>
+                    <div class="newsletter-card">
+                        <h3>Stay Updated</h3>
+                        <p>Subscribe to our newsletter for wind energy tips and updates.</p>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Rio Wind Turbine Logo" class="footer-logo-img">
+                        <span class="footer-logo-text">
+                            <span class="logo-rio">Rio</span>
+                            <span class="logo-wind">Wind</span>
+                            <span class="logo-turbine">Turbine</span>
+                        </span>
+                    </div>
+                    <p>Rio Wind Turbine Pvt Ltd provides renewable energy systems and deployment services. Product
+                        specifications may vary based on site conditions.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/riowindturabine/" class="social-icon" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61586576289835" class="social-icon"
+                            aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="X (Twitter)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Our Systems</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#applications">Applications</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-products">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#products">Rio Breeze – 0.3kW</a></li>
+                        <li><a href="#products">Rio Storm – 1kW</a></li>
+                        <li><a href="#products">Rio Titan – 3kW</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Have questions? Reach out via WhatsApp for quick support.</p>
+                    <a href="https://wa.me/919137328333" class="footer-whatsapp" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        WhatsApp Support
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rio Wind Turbine Pvt Ltd. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919137328333?text=Hello%20Rio%20Wind%20Turbine%20Team%2C%0AI%20am%20interested%20in%20your%20wind%20energy%20systems.%20Please%20contact%20me."
+        class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <!-- Product Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic content -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
